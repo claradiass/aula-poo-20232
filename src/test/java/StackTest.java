@@ -8,7 +8,7 @@ public class StackTest {
 
     @Test
     void testPushPeek() {
-        Stack stack = new Pilha();
+        Stack stack = new Pilha(10);
         assertNull(stack.peek());
         assertTrue(stack.isEmpty());
         stack.push("a");
@@ -40,7 +40,7 @@ public class StackTest {
 
     @Test
     void testPushPop() {
-        Stack stack = new Pilha();
+        Stack stack = new Pilha(10);
         stack.push("a");
         stack.push("b");
         stack.push("c");
